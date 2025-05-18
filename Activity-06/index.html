@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+
+    <style>
+        body {
+            background-color: #fbffff; 
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+
+        .heads {
+            color: #163468;
+        }
+
+        .lists{
+            color: #926d12;
+        }
+
+        #photo{
+            border: 2px solid #926d12;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        #mainHeader { 
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #163468;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="mainHeader" style="background-color: #c6e6f5; width: 100%;">
+        <h1 style="color:black; text-align: center;">Recipe Page</h1>
+        <nav id="links">
+            <a href="/Activity-01/mypage.html">About Me</a><br>
+            <a href="https://youtu.be/AtgqMOi2Ze4?si=yi7m0V4LxSXhCh7D">Watch How to Make Tonkatsu</a><br>
+            <a href="#ingredients">Check the Ingredients</a><br>
+        </nav>
+    </header>
+
+    <h2 class="heads">Tonkatsu</h2>
+    <img src="/img/tonkatsu.jpg" alt="An image of Tonkatsu" id="photo" style="box-shadow: 5px 5px 15px grey;">
+    <h2 class="heads">Watch How to Make Tonkatsu</h2>
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/AtgqMOi2Ze4" 
+            title="How to Make Tonkatsu" 
+            allowfullscreen>
+    </iframe>
+    <h3 class="heads">Steps to Make Tonkatsu</h3>
+    <ol class="lists" style="text-align: left; display: inline-block;">
+        <li>Trim the pork and season with salt and pepper.</li>
+        <li>Coat the pork in flour.</li>
+        <li>Dip it in beaten egg.</li>
+        <li>Cover evenly with panko breadcrumbs.</li>
+        <li>Fry in oil at 170–180°C until golden brown on both sides.</li>
+        <li>Drain excess oil and serve with shredded cabbage and tonkatsu sauce if desired.</li>
+    </ol>
+    <h3 class="heads" id="ingredients">Ingredients</h3>
+    <ul class="lists" style="text-align: left; display: inline-block; padding-right:300px;">
+        <li>2 pork loin cutlets</li>
+        <li>Salt and pepper (a pinch)</li>
+        <li>Flour (as needed)</li>
+        <li>1 egg</li>
+        <li>Panko breadcrumbs (as needed)</li>
+        <li>Oil for frying</li>
+    </ul>
+
+    <footer style="background-color:#c6e6f5 ">
+        <p>&copy; 2025 My Recipe Page Written by Tomoki Yoza.</p>
+    </footer>
+</body>
+</html>
