@@ -4,8 +4,10 @@
 body {
     background-color: #fbffff; /* this style gives background color */
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Funnel Display', sans-serif;
+
 }
+
 
 /* This style sets the text color of elements with class 'heads' to a dark blue. */
 .heads {
