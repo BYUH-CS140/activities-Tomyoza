@@ -1,17 +1,44 @@
-
-/* This style sets the background color of the entire page and centers the text. 
-   It also sets the default font for the page to Times New Roman. */
 body {
     background-color: #F5F3E7;
     background-image: url(images/bg.png);
     background-attachment: scroll;
-    color: #9E1B32; /* this style gives background color */
+    color: #9E1B32; 
     font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px white;
 }
 
-/* This style sets the text color of elements with class 'heads' to a dark blue. */
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: #fef6f0;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+nav a {
+    margin: 0px 15px;
+}
+
 .heads2 {
     color: #9E1B32;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.orderofimages {
+    display: flex;
+    justify-content: center;
+    list-style: none;       
+    padding: 0;
+    margin: 0;
+    gap: 15%; 
+}
+
+.listofimages {
+    text-align: center; 
 }
 
 img {
@@ -19,25 +46,17 @@ img {
     width: 500px;
 }
 
-/* This style sets the text color of elements with class 'lists' to a golden brown. 
-It also sets the text italic. */
-.listofplaces{
+#listofplaces{
     font-style: italic;
     list-style-image: url(images/list_icon.png);
 }
 
-/* This style adds a solid border and rounded corners to the element with ID 'photo',
-   and also adds padding inside the border. */
-
-
-/* This style sets a different font (Courier New) and bold weight for the main header,
-   and changes its text color to dark blue. */
 header { 
     font-weight: bold;
-    /* background-color: ; */
     color: #9E1B32;
 }
 
 footer {
-    /* background-color: ; */
+    text-align: center;
+    margin-top: 30px;
 }
