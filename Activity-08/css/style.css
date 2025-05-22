@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+#page-header {
+    background-image: url("pattern‑bg.png"); /* No such image in the assignment can't be found*/
+    background-size: cover; 
+    color: #ffffff; padding: 1rem;
+}
+
+.title {
+    font-size: 2rem; 
+    letter-spacing: 0.05em;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; gap: 1rem;
+}
+
+.nav-list > li {
+    padding: 0.25rem 0.75rem; background-color:
+    rgba(255,255,255,0.2); border-radius: 4px;
+}
+
+.nav-list a {
+    color: #ffffff; 
+    font-size: 1rem;
+}
+
+.nav-list a:hover {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.resources {
+    background-color: #ffffff; 
+    padding: 1rem; 
+    border-radius: 6px; 
+    width: 60%;
+}
+
+.resources li {
+    margin-bottom: 0.5rem;
+}
+
+/* #paragraph1 {
+    color: #926d12;
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+}
+
+
+
+#photo{
+    border: 2px solid #926d12;
+    border-radius: 4px;
+    padding: 10px;
+} */
+
+
+/* #mainHeader { 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #163468;
+} */
