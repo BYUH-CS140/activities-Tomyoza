@@ -11,8 +11,34 @@ a {
     text-decoration: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 8px 12px;
+    background-color: lightblue;
+    border-radius: 10%;
 }
 
 a:hover {
-    color: lightgray;
+    color: white;
+    transition: 0.2s;
+}
+
+li {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    border-radius: 10%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.dropdown li {
+    display: block;
+    padding: 10px;
+}
+
+li:hover .dropdown {
+    display: block;
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: lightgray;
     font-family: "Segoe UI", Arial, sans-serif;
 
 }
@@ -13,7 +13,8 @@ body {
 #page-header {
     background-image: url("pattern‑bg.png"); /* No such image in the assignment can't be found*/
     background-size: cover; 
-    color: #ffffff; padding: 1rem;
+    color: #ffffff; 
+    padding: 1rem;
 }
 
 .title {
@@ -27,8 +28,9 @@ body {
 }
 
 .nav-list > li {
-    padding: 0.25rem 0.75rem; background-color:
-    rgba(255,255,255,0.2); border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255,255,255,0.2); 
+    border-radius: 4px;
 }
 
 .nav-list a {

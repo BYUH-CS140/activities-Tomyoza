@@ -1,9 +1,9 @@
 body {
-    background-color: #F5F3E7;
+    background-color: #fcf9f4;
     background-image: url(images/bg.png);
     background-attachment: scroll;
-    color: #9E1B32; 
-    font-family: 'Times New Roman', Times, serif;
+    color: #333; 
+    font-family: 'Lora', 'Merriweather';
     text-shadow: 1px 1px 2px white;
 }
 
@@ -19,7 +19,24 @@ nav {
 }
 
 nav a {
+    color: #264d6d;
     margin: 0px 15px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    color: lightgray;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
 }
 
 .heads2 {
@@ -57,6 +74,9 @@ header {
 }
 
 footer {
+    color: #9E1B32;
+    opacity: 70%;
+    background-color: #9cbad3;
     text-align: center;
     margin-top: 30px;
 }
