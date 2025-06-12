@@ -32,11 +32,14 @@ nav a:hover {
 }
 
 nav ul {
-    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .heads2 {
@@ -47,11 +50,12 @@ nav li {
 
 .orderofimages {
     display: flex;
-    justify-content: center;
-    list-style: none;       
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
     padding: 0;
     margin: 0;
-    gap: 15%; 
+    gap: 20px;
 }
 
 .listofimages {
@@ -79,4 +83,76 @@ footer {
     background-color: #9cbad3;
     text-align: center;
     margin-top: 30px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+        gap: 15px;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+
+    .orderofimages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    img {
+        grid-template-columns: repeat(2, 1fr);
+        width: 400px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .orderofimages {
+        gap: 3%;
+    }
 }
