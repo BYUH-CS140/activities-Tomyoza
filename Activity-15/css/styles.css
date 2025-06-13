@@ -1,6 +1,5 @@
 body {
     background-color: #fcf9f4;
-    background-image: url(images/bg.png);
     background-attachment: scroll;
     color: #333; 
     font-family: 'Lora', 'Merriweather';
@@ -85,7 +84,28 @@ main {
     grid-area: main;
 }
 
-/* Desktop layout: rearrange with CSS Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
 @media screen and (min-width: 1024px) {
     body {
         display: grid;
@@ -119,5 +139,9 @@ main {
         float: none;
         display: block;
         margin: 0 auto 20px auto;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
