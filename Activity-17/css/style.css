@@ -1,0 +1,68 @@
+form {
+    padding: 10px;
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+.feedback {
+  color: red;
+  display: none;
+}
+
+.valid-feedback {
+  color: green;
+  display: none; 
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    max-width: 600px;
+    margin: 20px 150px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px 20px;
+    align-items: center;
+  }
+
+  form label {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="password"],
+  form .feedback,
+  form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  form .feedback {
+    grid-column: 2 / 3;
+  }
+
+  form button {
+    grid-column: 2 / 3;
+    justify-self: start;
+  }
+}
+
